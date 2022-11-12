@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="js-dom.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <section>
+    <h2 id="text">Hi</h2>
+    <button onclick="changeInnerHtml()">Change inner html 1,2 qns</button>
+     </section>
+    
+     <section>
+    <h2>Calculator</h2>
+    <input type="text" name="input1" id="input1">
+    <br>
+    <br>
+    <input type="text" name="input2" id="input2">
+    <br>
+    <br>
+    <button onclick="add()">Add</button>
+    <p id="addResult"></p>
+    <section>
+       
+        <section>
+            <button onclick="logInConsole()">5. Click Here To Log In The Console</button>
+        </section>
+
+        <section>
+            <p id="remove">Element to be removed</p>
+            <br>
+            <button onclick="remove()" id="removeButton">9. Remove above element</button>
+        </section>
+<br>
+        <section>
+            <button onclick="getNoOfPTags()" id="pTagsCount">10. Count No Of p tags</button>
+            <br>
+            <p id="noOfPTags"></p>
+        </section>
+
+        <section>
+            <h2>Form</h2>
+            <form id="form1" onsubmit="getFormValue()">
+            Name: <input type="text" name="name" id="name"><br>
+            <br>
+            <button type="submit">Submit</button>
+            </form>
+        </section>
+</body>
+</html>
